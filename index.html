@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Terapias Profissional</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .carousel {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .carousel-images {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-images img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .carousel-indicators {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+        }
+
+        .carousel-indicators button {
+            background-color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        .carousel-indicators button.active {
+            background-color: #333;
+        }
+
+        .faq,
+        .map {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .faq details {
+            margin-bottom: 10px;
+        }
+
+        .faq summary {
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .faq summary::marker {
+            content: "➤ ";
+        }
+
+        .map iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+            border-radius: 8px;
+        }
+
+        .whatsapp-icon {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="./assets/video-terapia-ocupacional.mp4" type="video/mp4">
+        Seu navegador não suporta a tag de vídeo.
+    </video>
+    <header>
+        <div class="header-content">
+            <h1>Sowilo 💎 Terapias</h1>
+            <p>Olá, sou a Sowilo, quer saber como funciona o tratamento energético?</p>
+            <p>Aqui iremos alinhar os seus Chakras e Aura e campo de energia para que você esteja mais protegido(a).</p>
+        </div>
+        <img src="./assets/sowilo-central-leão.png" alt="mulher-com-leão" class="header-image">
+        <img src="./assets/arcanjo miguel-cavalo branco.png" alt="arcanjo-miguel" class="header-image">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">Sobre Mim</a></li>
+            <li><a href="#gallery">Galeria</a></li>
+            <li><a href="#articles">Artigos</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <section id="about" class="about">
+            <h2>Sobre Mim</h2>
+            <p>Olá! Sou Sonia Apolinário, terapeuta a anos de experiência em ajudar pessoas a encontrar equilíbrio e
+                bem-estar. Minha abordagem é centrada no cliente, utilizando técnicas personalizadas para cada
+                indivíduo.</p>
+        </section>
+        <section id="gallery" class="gallery">
+            <h2>Galeria</h2>
+            <p>Veja algumas imagens do meu espaço de trabalho e sessões de terapia.</p>
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img src="./assets/escala de emoção.jfif" alt="Escala-Emocional">
+                    <img src="./assets/energizando Gabriel.jfif" alt="Escala-Vibracional">
+                    <img src="./assets/pedras sowilo.jfif" alt="Emanação-de-Luz">
+                    <img src="./assets/pedras sowilo 2.jfif" alt="Emanação-de-Luz">
+                    <img src="./assets/piramide-sowilo.jfif" alt="piramide-vibracional">
+                    <img src="./assets/circulo-espinhal-sowilo.jfif" alt="circulo-de-energia">
+                    <img src="./assets/circulo de energia sowilo.jfif" alt="circulo-de-energia">
+                </div>
+                <div class="carousel-indicators">
+                    <button class="active"></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                </div>
+            </div>
+        </section>
+        <section id="articles" class="articles">
+            <h2>Artigos</h2>
+            <p>Leia mais sobre terapias e bem-estar em nossos artigos.</p>
+            💡 Dicas e Curiosidades: Terapia Ocupacional
+
+            Você sabia que a Terapia Ocupacional não se resume apenas a atividades manuais? Ela é uma área da saúde que
+            ajuda pessoas de todas as idades a desenvolverem sua autonomia e qualidade de vida. O terapeuta ocupacional
+            utiliza atividades significativas — como jogos, artesanato, tecnologia e até mesmo tarefas do dia a dia —
+            para promover o bem-estar físico, emocional e social.
+
+            ✨ Curiosidade: A profissão surgiu oficialmente após a Primeira Guerra Mundial, auxiliando soldados a se
+            reintegrarem à sociedade. Hoje, a T.O. atua em hospitais, escolas, empresas e até no cuidado de idosos.
+
+            👉 Dica rápida: Se você busca melhorar sua rotina, organização e saúde mental, a Terapia Ocupacional pode te
+            ajudar a encontrar estratégias personalizadas para viver melhor!
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contato</h2>
+            <p>Entre em contato comigo através do e-mail: [Soniaapolinario465@gmail.com] ou pelo telefone: [11
+                986461652].</p>
+        </section>
+        <section class="faq">
+            <h2>Perguntas Frequentes</h2>
+            <details>
+                <summary>Como funciona o tratamento energético?</summary>
+                <p>O tratamento energético envolve alinhar seus chakras e aura para promover equilíbrio e bem-estar.</p>
+            </details>
+            <details>
+                <summary>Quanto tempo dura uma sessão de terapia?</summary>
+                <p>Uma sessão de terapia geralmente dura cerca de uma hora, mas pode variar dependendo das necessidades
+                    do cliente.</p>
+            </details>
+            <details>
+                <summary>Quais são os benefícios das terapias energéticas?</summary>
+                <p>As terapias energéticas podem ajudar a reduzir o estresse, melhorar o bem-estar emocional e promover
+                    a cura física.</p>
+            </details>
+        </section>
+        <section class="map">
+            <h2>Localização</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238680.42270475192!2d-49.54743225561762!3d-20.816291404413814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bdad614c2df789%3A0x8f2fb0f070642c09!2zU8OjbyBKb3PDqSBkbyBSaW8gUHJldG8sIFNQ!5e0!3m2!1spt-BR!2sbr!4v1741534278915!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+    <a href="https://wa.me/5511986461652" target="_blank" class="whatsapp-link">
+        <img src="./assets/icon whats.png" alt="WhatsApp" class="whatsapp-icon">
+    </a>
+    <footer>
+        <p>&copy; 2023 Sowilo Terapias - Alinhando sua energia para um bem-estar completo.</p>
+    </footer>
+
+    <script>
+        const images = document.querySelector('.carousel-images');
+        const indicators = document.querySelectorAll('.carousel-indicators button');
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            images.style.transform = `translateX(${-index * 100}%)`;
+            indicators.forEach((indicator, i) => {
+                indicator.classList.toggle('active', i === index);
+            });
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % indicators.length;
+            showSlide(currentIndex);
+        }
+
+        setInterval(nextSlide, 3000);
+
+
+        function initMap() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition, showError);
+            } else {
+                alert("Geolocalização não é suportada por este navegador.");
+            }
+        }
+
+        function showPosition(position) {
+            const latitude = position.coords.latitude;
+            const longitude = position.coords.longitude;
+            const mapFrame = document.getElementById('map-frame');
+            const mapSrc = `https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3153.019114858646!2d${longitude}!3d${latitude}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5m2!1sen!2sbr`;
+            mapFrame.src = mapSrc;
+        }
+
+        function showError(error) {
+            switch (error.code) {
+                case error.PERMISSION_DENIED:
+                    alert("Usuário negou a solicitação de Geolocalização.");
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    alert("Informações de localização não estão disponíveis.");
+                    break;
+                case error.TIMEOUT:
+                    alert("A solicitação para obter a localização do usuário expirou.");
+                    break;
+                case error.UNKNOWN_ERROR:
+                    alert("Ocorreu um erro desconhecido.");
+                    break;
+            }
+        }
+
+        window.onload = initMap;
+
+    </script>
+</body>
+
+</html>
