@@ -140,15 +140,6 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
-    h1 {
-        font-weight: bold; 
-        color: white; 
-    }
-
-    p {
-        font-weight: bold; 
-        color: white; 
-    }
 
     #background-video {
         left: 50%;
@@ -170,6 +161,12 @@ footer {
 
     .container {
         grid-template-columns: 1fr;
+    }
+
+    .header-content h1,
+    .header-content p {
+        font-weight: bold;
+        color: white;
     }
 }
 
@@ -196,6 +193,12 @@ footer {
     p {
         margin-top: 30px;
     }
+
+    .header-content h1,
+    .header-content p {
+        font-weight: bold;
+        color:white;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -206,9 +209,21 @@ footer {
     .header-content p {
         font-size: 1.5rem;
     }
+
+    .header-content h1,
+    .header-content p {
+        font-weight: bold;
+        color: white;
+    }
 }
 
 @media only screen and (min-width: 769px) {
+    .header-content h1,
+    .header-content p {
+        font-weight: bold; 
+        color: white; 
+    }
+
     .header-image {
         width: 200px;
     }
@@ -243,5 +258,11 @@ footer {
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+    }
+
+    .header-content h1,
+    .header-content p {
+        font-weight: bold;
+        color: white;
     }
 } 
