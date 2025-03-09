@@ -140,6 +140,16 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
+    h1 {
+        font-weight: bold; 
+        color: white; 
+    }
+
+    p {
+        font-weight: bold; 
+        color: white; 
+    }
+
     #background-video {
         left: 50%;
         top: 50%;
